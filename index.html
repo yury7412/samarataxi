@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Самарское такси</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <header class="d-flex align-items-center justify-content-between" style="max-width: 1200px; margin: 0 auto; margin-top: 20px; margin-bottom: 20px;">
+       <div class="logo">
+            <a href="/"><img src="img/Frame 2.svg" style="width: 270px;" alt="logo"></a>
+       </div>
+
+       <div class="navbar">
+        <ul class="nav d-flex flex-wrap gap-3">
+            <li><a href="" class="text-decoration-none fw-medium lh-sm text-dark link_menu hover-primary" style="font-size: 17px;">Тарифы</a></li>
+            <li><a href="" class="text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;">Услуги</a></li>
+            <li><a href="" class="text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;">Доп услуги</a></li>
+            <li class="nav-item dropdown">
+          <a class="dropdown-toggle text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Дополнительно
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Частые вопросы</a></li>
+            <li><a class="dropdown-item" href="#">Направления</a></li>
+          </ul>
+        </li>
+        </ul>
+       </div>
+
+       <div class="social_media">
+          <div class="d-flex" style="gap: 15px;">
+            <a href=""><img src="img/tg.svg" width="38" alt="tg"></a>
+             <a href=""><img src="img/whatsapp.svg" width="38" alt="whatsapp"></a>
+          </div>
+       </div>
+
+       <div class="contact_cont d-grid" style="gap: 5px;">
+           <a href="" class="text-decoration-none fw-medium lh-sm text-dark link_menu hover-primary" style="font-size: 22px;">+7 (927) 713-82-11</a>
+       <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="link_menu hover-primary" style="border: 0; background-color: white; text-align: start; font-family: 'Montserrat'; font-weight: 500; font-size: 16px; line-height: 18px; text-decoration-line: underline;">
+        Оставить заявку
+        </button>
+       </div>
+    </header>
+
+
+    <div class="hero">
+        <div class="title_cont" style="max-width: 1200px; margin: 0 auto; padding-top: 80px;">
+           <h1 class="text-white" style="font-style: normal;font-weight: 600;font-size: 70px;color: #F0F8FF;">Самарское такси<br> по всей России</h1>
+           <p style="font-style: normal;font-weight: 600;font-size: 18px; color: #F0F8FF; width: 800px; padding-top: 10px;">Официальный перевозчик "Такси Самара" предлагает пассажирские перевозки (такси) по Самаре и Самарской области по низким ценам. Работаем по всем направлениям из Самары/в Самару.</p>
+
+           <button type="button" class="btn" style="margin-top: 10px; background: #F0F8FF; border-radius: 20px; padding: 14px 70px; font-weight: 600; font-size: 15px; line-height: 21px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Оставить заявку
+</button>
+        </div>
+    </div>
+
+
+    <div class="section_page">
+        <h2>Рассчитать стоимость</h2>
+        
+
+        <div class="container_form" id="calculate">
+            <div class="cont_form_wrapper" style="max-width: 1200px; margin: 0 auto; margin-top: 30px;">
+                <div class="input_cont_wrapper">
+                    <div class="cont_form d-flex gap-4  align-items-baseline">
+                        <input type="text" id="cityFrom" placeholder="Выберите пункт отправления" />
+                        <input type="text" id="cityTo" placeholder="Выберите пункт прибытия" />
+                        <select id="tariff">
+                            <option value="" disabled="" selected="">Выберите тариф </option>
+                            <option value="20" />Эконом класс (от 20 ₽/км)
+                                <option value="25" />Комфорт класс (от 25 ₽/км)
+                                <option value="28" />Комфорт Plus (от 28 ₽/км)
+                                <option value="20" />Универсал (от 20 ₽/км)
+                                <option value="40" />Бизнес класс (от 40 ₽/км)
+                                <option value="45" />Минивэн (от 45 ₽/км)      
+
+                            </select>
+                        <select id="services">
+                                <option value="" disabled="" selected="">Дополнительные услуги</option>
+                                <option value="0" />Машина для некурящих (Бесплатно)
+                                <option value="100" />Курящий салон (+100 ₽)
+                                <option value="150" />Детское кресло, доступно только в классе комфорт (+150 ₽)
+                                <option value="150" />Поездка с животным (+150 ₽)
+                                <option value="0" />Такси с кондиционером (бесплатно)
+
+                <option value="0" />Такси без рекламы (бесплатно)
+                <option value="0" />Желтый автомобиль (бесплатно)
+
+                <option value="150" />Такси с лыжами и сноубордом (+150 ₽)
+
+                <option value="250" />Помощь водителя (+250 ₽)
+
+                            </select>
+                           
+                    </div>
+                    <div class="btn_calculate">
+                        <button class="btn_price_taxi" onclick="calculateCost()">Рассчитать стоимость</button>
+                    </div>
+
+                     <div class="result" id="result"></div>
+                    <div id="map" style="width: 100%; height: 400px; margin-top: 20px; display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="section_page">
+         <h2>Основные услуги</h2>
+        
+         <div class="card_flex" style="max-width: 1200px; margin: 0 auto;">
+            <div class="card visible" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 220px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+
+                <div class="card visible" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 220px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+
+                
+                <div class="card visible" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 220px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+
+                <div class="card visible" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 220px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+
+                 <div class="card hidden" style="border-radius: 20px; display: none;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 220px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>  
+         </div>
+
+         <button id="showMoreBtn" class="link_menu hover-primary">Показать еще</button>
+    </div>
+
+
+      <div class="section_page">
+           <h2>Наши тарифы</h2>
+
+
+
+
+           <div class="card_flex" style="max-width: 1200px; margin: 0 auto;">
+            <div class="card card_service" style="border-radius: 20px; width: 300px;">
+                <div class="card-body">
+                    <div class="card-title_service">Эконом класс</div>
+                     <div class="price_service">От 20 руб. за км</div>
+                     <img src="img/econom.png" width="90%" alt="econon">
+                </div>
+            </div>                
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d3b3d20b-6c57-4626-b184-69cda98f0559&suggest_apikey=0d3aa57b-7df0-49af-a363-3a7b72745602&lang=ru_RU"
+    type="text/javascript"></script>
+
+ 
+
+    <script>
+       jQuery.noConflict();
+(function($) {
+    $(document).ready(function() {
+        // Функция для форматирования адреса
+        function formatAddress(suggestion) {
+            var data = suggestion.data;
+            var result = suggestion.value;
+            
+            if (data.city || data.settlement) {
+                result = (data.city || data.settlement) + ', ';
+                if (data.street) result += data.street;
+                if (data.house) result += ', ' + data.house;
+                if (data.flat) result += ', кв. ' + data.flat;
+                if (data.block) result += ', корп. ' + data.block;
+            }
+            
+            return result;
+        }
+
+         $("#cityFrom").suggestions({
+        token: "2ca423f90d51a7825cab5f07efdbf16f37c589f5", // замените на свой токен
+        type: "ADDRESS",
+        count: 5,
+        minChars: 3, // минимальное количество символов для показа подсказок
+        onSelect: function(suggestion) {
+            console.log("Выбрано место отправления:", suggestion.value);
+        }
+    });
+    
+    // Инициализация для поля "Куда"
+    $("#cityTo").suggestions({
+        token: "2ca423f90d51a7825cab5f07efdbf16f37c589f5", // замените на свой токен
+        type: "ADDRESS",
+        count: 5,
+        minChars: 3,
+        onSelect: function(suggestion) {
+            console.log("Выбрано место назначения:", suggestion.value);
+        }
+    });
+    });
+})(jQuery);
+        let myMap;
+        let route;
+
+        function toggleServices() {
+            const servicesSelect = document.getElementById('services');
+            const toggleButton = document.getElementById('toggleServicesButton');
+
+            if (servicesSelect.style.display === 'none') {
+                servicesSelect.style.display = 'block';
+                toggleButton.textContent = ''; // Скрыть текст кнопки
+            } else {
+                servicesSelect.style.display = 'none';
+                toggleButton.textContent = 'Выбрать дополнительные услуги'; // Вернуть текст
+            }
+        }   
+
+        function calculateCost() {
+    var cityFrom = document.getElementById('cityFrom').value.trim();
+    var cityTo = document.getElementById('cityTo').value.trim();
+    var tariff = parseFloat(document.getElementById('tariff').value);
+    var servicesCost = parseFloat(document.getElementById('services').value) || 0;
+
+    if (!cityFrom || !cityTo || isNaN(tariff)) {
+        alert("Пожалуйста, заполните все поля.");
+        return;
+    }
+
+    ymaps.ready(function () {
+        ymaps.geocode(cityFrom).then(function (resFrom) {
+            ymaps.geocode(cityTo).then(function (resTo) {
+                var coordsFrom = resFrom.geoObjects.get(0).geometry.getCoordinates();
+                var coordsTo = resTo.geoObjects.get(0).geometry.getCoordinates();
+
+                ymaps.route([coordsFrom, coordsTo]).then(function (route) {
+                    var distance = route.getLength() / 1000;
+                    var totalCost = (distance * tariff) + servicesCost;
+
+                    document.getElementById('result').innerText = 
+                        `Стоимость поездки: ${totalCost.toFixed(2)} ₽ (Расстояние: ${distance.toFixed(2)} км)`;
+
+                    // Показываем карту и маршрут
+                    document.getElementById('map').style.display = 'block';
+                    if (myMap) myMap.destroy();
+                    myMap = new ymaps.Map("map", { center: coordsFrom, zoom: 10 });
+                    myMap.geoObjects.add(route.getPaths());
+                }).catch(function (error) {
+                    alert('Ошибка маршрута: ' + error.message);
+                });
+            }).catch(function (error) {
+                alert('Ошибка геокодирования "куда": ' + error.message);
+            });
+        }).catch(function (error) {
+            alert('Ошибка геокодирования "откуда": ' + error.message);
+        });
+    });
+}
+
+
+document.getElementById('showMoreBtn').addEventListener('click', function() {
+        // Находим все скрытые карточки
+        const hiddenCards = document.querySelectorAll('.card.hidden');
+        
+        // Показываем все скрытые карточки
+        hiddenCards.forEach(card => {
+            card.style.display = 'block';
+        });
+        
+        // Скрываем кнопку после показа всех карточек
+        this.style.display = 'none';
+    });
+    </script>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Содержимое модального окна
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+    
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        const modalElement = document.getElementById('staticBackdrop');
+        
+       
+        modalElement.addEventListener('click', function(event) {
+         
+          if (event.target === modalElement) {
+            const modal = bootstrap.Modal.getInstance(modalElement);
+            modal.hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
