@@ -43,13 +43,14 @@
 }
 
 
-#tariff, #services{
+#tariff, #services, #region-select{
     border: 1px solid #798CAC;
     border-radius: 10px;
     padding: 8px;
     outline: none;
     width: 270px;
     cursor: pointer;
+     height: max-content;
 }
 
 .btn_price_taxi{
@@ -277,7 +278,7 @@ tr{
 
 .accordion-button{
     font-weight: 600;
-    font-size: 23px !important;
+    font-size: 24px !important;
     color: #000000;
     width: 200px;
 }
@@ -300,3 +301,102 @@ tr{
 .accordion-button{
     padding-left: 0px !important;
 }
+
+
+
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    --bs-accordion-btn-icon-width: 25px !important;
+}
+
+.accordion-button:not(.collapsed){
+    color: #212529 !important;
+}
+
+.accordion-body{
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 17px;
+    color: #575656;
+}
+
+.section_page_sity{
+    max-width: 1200px;
+    margin: 0 auto;
+      margin-top: 50px;
+}
+
+
+.section_page_sity h2{
+    margin-top: 0px;
+    text-align: start;
+    font-size: 40px;
+}
+
+
+
+.card_sity{
+    border: 1px solid #798CAC;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.card_sity a{
+    padding-right: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.list_sity_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+.logos-marquee {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .logos-track {
+            display: flex;
+            align-items: center;
+            will-change: transform; /* Оптимизация анимации */
+            margin-top: 40px;
+        }
+        
+        .logo-item {
+            flex: 0 0 auto;
+            width: 275px;
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-item img {
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        
+        .logo-item:hover img {
+            filter: grayscale(0%);
+        }
